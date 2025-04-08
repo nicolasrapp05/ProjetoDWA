@@ -40,3 +40,4 @@ C:\Users\nicol\OneDrive\Documentos\UP\Desenvolvimento_Web_Avancado\ProjetoDWA\ob
 C:\Users\nicol\OneDrive\Documentos\UP\Desenvolvimento_Web_Avancado\ProjetoDWA\obj\Debug\net8.0\ProjetoDWA.pdb
 C:\Users\nicol\OneDrive\Documentos\UP\Desenvolvimento_Web_Avancado\ProjetoDWA\obj\Debug\net8.0\ProjetoDWA.genruntimeconfig.cache
 C:\Users\nicol\OneDrive\Documentos\UP\Desenvolvimento_Web_Avancado\ProjetoDWA\obj\Debug\net8.0\ref\ProjetoDWA.dll
+C:\Users\nicol\OneDrive\Documentos\UP\Desenvolvimento_Web_Avancado\ProjetoDWA\obj\Debug\net8.0\ProjetoDWA.sourcelink.json
