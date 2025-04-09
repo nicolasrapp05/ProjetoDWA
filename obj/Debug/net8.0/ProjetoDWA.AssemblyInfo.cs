@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetoDWA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55ac552c58bf23bb03aa2eaed0ba9d14e5abb159")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbe8b752e7a423f1045c8b3493b72c10f7899076")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetoDWA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetoDWA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
