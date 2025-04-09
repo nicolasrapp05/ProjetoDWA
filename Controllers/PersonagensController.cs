@@ -21,8 +21,32 @@ namespace ProjetoDWA.Controllers
         [HttpPost]
         public async Task<IActionResult> AddPersonagem(Personagem personagem)
         {
+            if (personagem == null) {
+                return BadRequest("Dados Inválidos!");
+            }
+
             _appDbContext.DWA.Add(personagem);
             await _appDbContext.SaveChangesAsync();
+
+            return StatusCode(201, personagem);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult <IEnumerable<Personagem>>> GetPersonagem()
+        {
+            var personagens = await _appDbContext.DWA.ToListAsync();
+
+            return Ok(personagens);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Personagem>> GetPersonagem(int id)
+        {
+            var personagem = await _appDbContext.DWA.FindAsync(id);
+
+            if (personagem == null) {
+                return NotFound("Personagem não encontrado!");
+            }
 
             return Ok(personagem);
         }
