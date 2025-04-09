@@ -16,11 +16,11 @@ namespace ProjetoDWA.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddPersonagem(Personagem personagem)
+        public async Task<IActionResult> AddPersonagem([FromBody] Personagem personagem)
         {
-            if (personagem == null)
+            if (!ModelState.IsValid)
             {
-                return BadRequest("Dados Inválidos!");
+                return BadRequest(ModelState);
             }
 
             _appDbContext.DWA.Add(personagem);
