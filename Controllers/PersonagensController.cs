@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ProjetoDWA.Data;
+using ProjetoDWA.Models;
 
 namespace ProjetoDWA.Controllers
 {
@@ -15,6 +16,15 @@ namespace ProjetoDWA.Controllers
         public PersonagensController(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddPersonagem(Personagem personagem)
+        {
+            _appDbContext.DWA.Add(personagem);
+            await _appDbContext.SaveChangesAsync();
+
+            return Ok(personagem);
         }
     }
 }
